@@ -1,5 +1,10 @@
-console.log("hi")
+/// <reference path="../Libraries/paper-full.js" />
 
+// const paper = require("../Libraries/paper-full");
+
+var mx,my;
+var maxPoints  = 5;
+var points = [];
 
 window.onload = function() { paper.setup('flockCanvas'); console.log("windowLoaded"); 
 
@@ -9,8 +14,6 @@ strokeWidth: 20,
 strokeCap: 'round'});
 
 
-var points = [new paper.Point(0,0), new paper.Point(100,100)]
-
 path.add(points[0]);
 path.add(points[1]);
 
@@ -19,9 +22,37 @@ path.strokeWidth = 20;
 
 
 
+window.onmousemove= function(event)
+{
+    mx = event.x;
+    my =event.y;
+    // console.log(mx + " " + my);
+    if(points.length< maxPoints)
+    {
+        points.push(new paper.Point(mx,my));
+        
+    }
+    else
+    {
+        points.shift();
+        points.push(new paper.Point(mx,my));
+    }
+
+    path.removeSegments(0,path.segments.length,true);
+    for (var i =0; i< maxPoints;i++)
+    {
+        path.add(points[i]);
+    }
+}
+
+
 
 
 
 }
+
+
+
+
 
 

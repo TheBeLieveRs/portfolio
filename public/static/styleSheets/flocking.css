@@ -1,0 +1,90 @@
+
+
+body{
+    
+    background: #f3f1f1;
+}
+
+
+
+#flockCanvasDiv{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width:  70%;
+    height:  70%;
+
+}
+
+
+#flockCanvas {
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    position: absolute;
+ 
+    width:  100%;
+    height:  100%;
+
+    
+}
+
+
+.neomorphic
+{
+    /* neomorphic-element   */
+    border-radius: 50px;
+    background: #f3f1f1;
+    box-shadow:  20px 20px 60px #cfcdcd,
+             -20px -20px 60px #ffffff;
+}
+
+
+.neomorphic-red
+{
+    /* neomorphic-element   */
+    bborder-radius: 50px;
+    background: #af314b;
+    box-shadow:  20px 20px 60px #952a40,
+                 -20px -20px 60px #c93856;
+}
+
+.neomprphic-in-red
+{
+    border-radius: 50px;
+background: #af314b;
+box-shadow: inset 20px 20px 60px #952a40,
+            inset -20px -20px 60px #c93856;
+}
+
+
+.neomorphic-purple
+{
+    /* neomorphic-element   */
+    border-radius: 50px;
+    background: #6a31af;
+    box-shadow:  20px 20px 60px #5a2a95,
+                 -20px -20px 60px #7a38c9;
+}
+
+
+.neomorphic-blue
+{
+    /* neomorphic-element   */
+    border-radius: 50px;
+background: #3179af;
+box-shadow:  20px 20px 60px #2a6795,
+             -20px -20px 60px #388bc9;
+}
+
+.neomorphic-green
+{
+    /* neomorphic-element   */
+    border-radius: 50px;
+background: #3aaf31;
+box-shadow:  20px 20px 60px #31952a,
+             -20px -20px 60px #43c938;
+}
